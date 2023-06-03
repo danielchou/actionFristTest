@@ -25,7 +25,7 @@ except KeyError:
 
 
 if __name__ == "__main__":
-    logger.info(f"Token value: {SOME_SECRET}")
+    #logger.info(f"Token value: {SOME_SECRET}")
 
     r = requests.get('https://weather.talkpython.fm/api/weather/?city=Berlin&country=DE')
     if r.status_code == 200:
