@@ -54,6 +54,7 @@ if __name__ == "__main__":
     r3 = requests.get(url, headers = headers).content
     soup = BeautifulSoup(r3, "html.parser")
     rr3 = soup.prettify()
+    print(rr3)
     write_LogFile(f"paras/股票名稱.csv", rr3)
 
     # dfn = pd.read_json(rr3)
