@@ -45,6 +45,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# locally files not push
-股票名稱.csv
-status.log
+# # locally files not push
+# 股票名稱.csv
+# status.log
