@@ -33,6 +33,7 @@ jobs:
           git config --local user.name "DanielChou"
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
+          git pull
           git push
           
       # - name: push changes
