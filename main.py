@@ -54,14 +54,14 @@ if __name__ == "__main__":
     r3 = requests.get(url, headers = headers).content
     soup = BeautifulSoup(r3, "html.parser")
     rr3 = soup.prettify()
-    dfn = pd.read_json(rr3)
-    dfn = dfn[(dfn["id"]>="1101") & (dfn["id"]<="9999") & (dfn["id"].str.len() == 4)]
-    dfn = dfn.drop(columns=['type','country','url', 'industries'])
-    dfn["id"] = dfn["id"].astype("string")
-    dfn["comp"] = dfn.apply(comp_stockName, axis = 1)
-    stockNameStr = ""
-    for c in dfn["comp"].tolist():
-        stockNameStr += f"{c}\n"
+    # dfn = pd.read_json(rr3)
+    # dfn = dfn[(dfn["id"]>="1101") & (dfn["id"]<="9999") & (dfn["id"].str.len() == 4)]
+    # dfn = dfn.drop(columns=['type','country','url', 'industries'])
+    # dfn["id"] = dfn["id"].astype("string")
+    # dfn["comp"] = dfn.apply(comp_stockName, axis = 1)
+    # stockNameStr = ""
+    # for c in dfn["comp"].tolist():
+    #     stockNameStr += f"{c}\n"
     write_LogFile(f"paras/股票名稱.csv", stockNameStr)
 
   
