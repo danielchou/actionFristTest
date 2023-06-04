@@ -31,7 +31,6 @@ jobs:
         run: |
           git config --local user.email "daniel0422@gmail.com"
           git config --local user.name "DanielChou"
-          git pull origin main
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
           git push origin main
