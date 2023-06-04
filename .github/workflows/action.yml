@@ -34,7 +34,7 @@ jobs:
           git pull origin master --allow-unrelated-histories
           git add -A
           git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          git push origin master
+          git push
           
       # - name: push changes
       #   uses: ad-m/github-push-action@v0.6.0
