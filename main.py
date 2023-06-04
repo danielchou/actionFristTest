@@ -1,7 +1,6 @@
 import logging
 import logging.handlers
 import os
-
 import requests
 
 logger = logging.getLogger(__name__)
@@ -23,10 +22,8 @@ logger.addHandler(logger_file_handler)
 #     #logger.info("Token not available!")
 #     #raise
 
-import requests
 import pandas as pd
 from bs4 import BeautifulSoup
-import json
 import codecs 
 
 def comp_stockName(r):
