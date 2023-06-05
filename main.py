@@ -52,8 +52,8 @@ if __name__ == "__main__":
     #抓取股票中文名稱
     url = "https://www.wantgoo.com/investrue/all-alive"
     r3 = requests.get(url, headers = headers).content
-    soup = BeautifulSoup(r3, "html.parser")
-    rr3 = soup.prettify()
+    # soup = BeautifulSoup(r3, "html.parser")
+    # rr3 = soup.prettify()
     print(rr3)
     write_LogFile(f"paras/股票名稱.csv", rr3)
 
